@@ -1,0 +1,17 @@
+{
+  "name": "Full-Stack CRUD Application",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installMaven": "true"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "echo 'Environment setup complete. Run backend and frontend separately.'"
+}
